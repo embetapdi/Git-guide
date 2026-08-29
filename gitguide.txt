@@ -88,4 +88,8 @@ Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/embetapdi/Git-guide.git
    ace0077..862e1bb  main -> main
 
-C:\Users\MINH ANH\minhanh> 
+C:\Users\MINH ANH\minhanh>git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+  // CHUYỂN NHÁNH LÀM VIỆC SANG MAIN
