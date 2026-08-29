@@ -7,21 +7,27 @@
 Microsoft Windows [Version 10.0.26200.9168]
 (c) Microsoft Corporation. All rights reserved.
 
-C:\Users\MINH ANH\minhanh>git init
+C:\Users\MINH ANH\minhanh>git init // TẠO MỚI CHO MỖI REPO
 Initialized empty Git repository in C:/Users/MINH ANH/minhanh/.git/
 
-C:\Users\MINH ANH\minhanh>git add readme.md
+C:\Users\MINH ANH\minhanh>git add readme.md // HƯỚNG DẪN CÁI REPO ĐÓ THƯỜNG ĐẶT TÊN README.md VIẾT HOA
 
-C:\Users\MINH ANH\minhanh>git commit -m "first commit"
+C:\Users\MINH ANH\minhanh>git commit -m "first commit" // ĐẶT ND CHO MỤC ĐÓ
 [master (root-commit) c76506b] first commit
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 readme.md
 
-C:\Users\MINH ANH\minhanh>git branch -M main
+C:\Users\MINH ANH\minhanh>git branch -M main // BTH LÀ MASTER, DÒNG NÀY ĐỂ ĐỔI TÊN LẠI THÀNH main
 
-C:\Users\MINH ANH\minhanh>git remote add origin https://github.com/embetapdi/Git-guide.git
 
-C:\Users\MINH ANH\minhanh>git push -u origin main
+C:\Users\MINH ANH\minhanh>git remote add origin https://github.com/embetapdi/Git-guide.git //
+DÒNG NÀY ĐỂ BIẾT MÌNH LÀM VIỆC Ở REPO NÀO DỰA TRÊN LINK GIT CUNG CẤP
+
+C:\Users\MINH ANH\minhanh>git push -u origin main   //
+DÒNG NÀY ĐỂ ĐẨY FULL CODE VÀ LỊCH SỬ COMMIT TỪ NHÁNH main Ở MÁY MÌNH LÊN GIT, NHỮNG LẦN SAU CHỈ CẦN DÙNG 
+"git push origin _ten nhanh muon push_"
+
+
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 215 bytes | 107.00 KiB/s, done.
@@ -30,21 +36,23 @@ To https://github.com/embetapdi/Git-guide.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 
-C:\Users\MINH ANH\minhanh>git checkout -b feature1
+
+
+C:\Users\MINH ANH\minhanh>git checkout -b feature1 // TẠO THÊM NHÁNH MỚI ĐỂ LÀM CÁC TÍNH NĂNG
 Switched to a new branch 'feature1'
 
-C:\Users\MINH ANH\minhanh>git branch
+C:\Users\MINH ANH\minhanh>git branch // KIỂM TRA XEM ĐANG Ở NHÁNH NÀO
 * feature1
   main
 
-C:\Users\MINH ANH\minhanh>git add gitguide.txt
+C:\Users\MINH ANH\minhanh>git add gitguide.txt // TẠO gitguid.txt ở explorer trước, sau đó mới add
 
-C:\Users\MINH ANH\minhanh>git commit -m "add git guide file"
+C:\Users\MINH ANH\minhanh>git commit -m "add git guide file" // ĐẶT ND CHO MỤC gitguide.txt
 [feature1 704dda5] add git guide file
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 gitguide.txt
 
-C:\Users\MINH ANH\minhanh>git push origin feature1
+C:\Users\MINH ANH\minhanh>git push origin feature1 // ĐẨY LÊN NHÁNH feature1 trên git
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Delta compression using up to 18 threads
@@ -58,44 +66,26 @@ remote:
 To https://github.com/embetapdi/Git-guide.git
  * [new branch]      feature1 -> feature1
 
-C:\Users\MINH ANH\minhanh>git add gitguide.txt
+C:\Users\MINH ANH\minhanh>git add gitguide.txt // CÓ SỬA THÌ ADD LẠI, "git add . " thì add hết tất cả file mà kh cần add từng cái
 
-C:\Users\MINH ANH\minhanh>git commit -m 
-error: switch `m' requires a value
 
-C:\Users\MINH ANH\minhanh>git commit -m "debug"
-[feature1 8a77de0] debug
- 1 file changed, 6 insertions(+)
 
-C:\Users\MINH ANH\minhanh>git push origin feature1
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
+// KHI SỬA NHIỀU FILE => 
+
+ C:\Users\MINH ANH\minhanh>git add . // ĐẨY LÊN 1 LẦN HẾT FILE
+
+C:\Users\MINH ANH\minhanh>git commit -m "add README.md" // ĐANG ĐỨNG TRONG README.md/ đang code trong readme.md, thì commit của README.md
+[main 862e1bb] add README.md
+ 2 files changed, 96 insertions(+)
+
+C:\Users\MINH ANH\minhanh>git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
 Delta compression using up to 18 threads
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 1.03 KiB | 528.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Writing objects: 100% (4/4), 1.91 KiB | 977.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/embetapdi/Git-guide.git
-   704dda5..8a77de0  feature1 -> feature1
+   ace0077..862e1bb  main -> main
 
-C:\Users\MINH ANH\minhanh>git push origin feature1
-Everything up-to-date
-
-C:\Users\MINH ANH\minhanh>git checkout main
-Switched to branch 'main'
-Your branch is up to date with 'origin/main'.
-
-C:\Users\MINH ANH\minhanh>git pull origin main
-remote: Enumerating objects: 1, done.
-remote: Counting objects: 100% (1/1), done.
-remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-Unpacking objects: 100% (1/1), 904 bytes | 113.00 KiB/s, done.
-From https://github.com/embetapdi/Git-guide
- * branch            main       -> FETCH_HEAD
-   c76506b..ace0077  main       -> origin/main
-Updating c76506b..ace0077
-Fast-forward
- gitguide.txt | 6 ++++++
- 1 file changed, 6 insertions(+)
- create mode 100644 gitguide.txt
-
-C:\Users\MINH ANH\minhanh>   
+C:\Users\MINH ANH\minhanh> 
